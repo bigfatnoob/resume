@@ -45,7 +45,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[]{bigfatnoob-resume}
-
+\usepackage{graphics}
 
 \begin{document}
 
@@ -61,10 +61,9 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-\namesection{Debarghya}{Das}{ \urlstyle{same}\url{http://debarghyadas.com} \\
-\href{mailto:dd367@cornell.edu}{dd367@cornell.edu} | 607.379.5733
+\profilepic{img/profile.png}
+\namesection{George}{Mathew}{ \urlstyle{same}\url{georgevmathew.com} \\
+\href{mailto:george.meg91@gmail.com}{george.meg91@gmail.com} | 614.535.8678
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -81,35 +80,27 @@
 
 \section{Education} 
 
-\subsection{Cornell University}
-\descript{MEng in Computer Science}
-\location{Expected Dec 2014 | Ithaca, NY \\ Cum. GPA: N/A}
+\subsection{North Carolina State}
+\descript{MS in Computer Science}
+\location{Expected May 2016 | Raleigh, NC \\ Current. GPA: 3.89}
 \sectionsep
 
-
-\descript{BS in Computer Science}
-\location{Expected May 2014 | Ithaca, NY}
-Conc. in Software Engineering \\
+\subsection{Amrita University}
+\descript{B.Tech in Electronics Engg}
+\location{July 2008 - May 2012 | CBE, India}
 College of Engineering \\
-Dean's List (All Semesters) \\
-\location{ Cum. GPA: 3.92 / 4.0 \\
-Major GPA: 3.94 / 4.0}
-\sectionsep
-
-\subsection{La Martiniere for Boys}
-\location{Grad. May 2011|  Kolkata, India}
+\location{ Cum. GPA: 3.92 / 4.0}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     LINKS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Links} 
-Github:// \href{https://github.com/deedydas}{\custombold{deedydas}} \\
-LinkedIn://  \href{https://www.linkedin.com/in/debarghyadas}{\custombold{debarghyadas}} \\
-YouTube://  \href{https://www.youtube.com/user/DeedyDash007}{\custombold{DeedyDash007}} \\
-Twitter://  \href{https://twitter.com/debarghya_das}{\custombold{@debarghya\_das}} \\
-Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
+\section{FootPrints} 
+Github: \href{https://github.com/bigfatnoob}{\custombold{bigfatnoob}} \\
+LinkedIn: \href{https://www.linkedin.com/in/georgevmathew}{\custombold{georgevmathew}} \\
+Twitter: \href{https://twitter.com/dbigfatnoob}{\custombold{@dbigfatnoob}} \\
+Facebook: \href{https://www.facebook.com/george.mathew.1690}{\custombold{george.mathew.1690}}\\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -119,20 +110,19 @@ Quora://  \href{https://www.quora.com/Debarghya-Das}{\custombold{Debarghya-Das}}
 \section{Coursework}
 \subsection{Graduate}
 Advanced Machine Learning \\
-Open Source Software Engineering \\
-Advanced Interactive Graphics \\
-Compilers + Practicum \\
-Cloud Computing \\
+Automated Software Engineering \\
+Advanced Algorithms \\
+Database Management Systems \\
+Compilers \\
+
+
 \sectionsep
 
 \subsection{Undergraduate}
-Information Retrieval \\
-Operating Systems \\
-Artificial Intelligence + Practicum \\
-Functional Programming \\
-Computer Graphics + Practicum \\
-{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst) }}} \\
-Unix Tools and Scripting \\
+Pattern Recognition \\
+Agent Based Modelling \\
+Image Processing \\
+Speech Recognition using SVM\\
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -141,14 +131,19 @@ Unix Tools and Scripting \\
 
 \section{Skills}
 \subsection{Programming}
-\location{Over 5000 lines:}
-Java \textbullet{}   Shell \textbullet{} JavaScript \textbullet{} Matlab \\
-OCaml \textbullet{} Python \textbullet{} Rails \textbullet{} \LaTeX\ \\ 
-\location{Over 1000 lines:}
-C \textbullet{} C++ \textbullet{} CSS \textbullet{} PHP \textbullet{} Assembly \\
+\location{Experienced:}
+Java \textbullet{} JavaScript\textbullet{} HTML \textbullet{} Matlab \\
+MySQL \textbullet{} Python \textbullet{} MongoDB \textbullet{} CSS \\ 
+\location{Semi-Pro:}
+C++ \textbullet{} R \textbullet{} Redis \textbullet{} Clojure \textbullet{} \LaTeX\ \\
 \location{Familiar:}
-AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
+PHP \textbullet{} Android \textbullet{} Shell \textbullet{} Haskell
 \sectionsep
+
+\subsection{Pet Projects}
+\href{http://region.io}{\custombold{Region.io}}: Online bookmark manager.
+\href{https://github.com/NCSU-Advanced-Algos/octorater}{\custombold{Octorater}}: Movie Predictor on Trident
+\href{https://github.com/bigfatnoob/optima}{\custombold{Optima}}: Multi Objective Optimization algorithms framework
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -166,26 +161,32 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 
 \section{Experience}
 
-\runsubsection{Coursera}
-\descript{| KPCB Fellow + Software Engineering Intern }
-\location{Expected June 2014 – Sep 2014 | Mountain View, CA}
+\runsubsection{Facebook}
+\descript{| Software Engineering Intern }
+\location{May 2015 – August 2015 | Menlo Park, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}\item 52 out of 2500 applicants chosen to be a KPCB Fellow 2014.
+\begin{tightemize}
+\item Worked on query parsing and big data management across regions for facebook infrastructure data.
+\item Created a thrift based API to help data migrate efficiently across datacenters.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Google}
-\descript{| Software Engineering Intern }
-\location{May 2013 – Aug 2013 | Mountain View, CA}
+\runsubsection{CrowdChat}
+\descript{| Software Engineer }
+\location{October 2013 – June 2014 | Hyderabad, India}
 \begin{tightemize}
-\item Worked on the YouTube Captions team in primarily vanilla Javascript and Python to plan, design and develop the full stack implementation of a new framework to add and edit Automatic Speech Recognition captions.\item Created a backbone.js-like framework for the Captions editor.\item All code was reviewed, perfected, and pushed to production.\end{tightemize}
+\item Developed \textbf{\href{https://www.crowdchat.net/}{crowdchat.net}}, a hash-tag based chat platform. It was built using the NodeJS Redis stack. Bootstrap, jQuery and client jade were used to develop the user interface.
+\item Worked on \textbf{\href{https://platform.crowdchat.net}{platform.crowdchat.net}}, a data analytics platform that helps you connect with people and subscribe to their activities on twitter. The application was built on the Java MySQL stack and successfully scaled to hold more than 250 GB of analyzed data. Full text search was provided using Apache Solr.\end{tightemize}
 \sectionsep
 
-\runsubsection{Phabricator}
-\descript{| Open Source Contributor \& Team Leader}
-\location{Jan 2013 – May 2013 | Palo Alto, CA \& Ithaca, NY}
+\runsubsection{Payoda Technologies}
+\descript{| Software Development Engineer}
+\location{June 2012 – September 2013 | Coimbatore, India}
 \begin{tightemize}
-\item Phabricator is used daily by Facebook, Dropbox, Quora, Asana and more.\item I created the Meme generator, the entire Lipsum application, ported Tokens to different apps, fixed many bugs and more in PHP and Shell.\item Led a team from MIT, Cornell, IC London and UHelsinki for the project.\end{tightemize}
+\item Created a REST based module to register a device into \textbf{\href{http://www.appviewx.com/}{AppViewX}}, which is a software load balancer.
+\item Developed an aggregation module on mongoDB using map-reduce to aggregate statistics periodically.
+\item Designed and developed a topological view to display hierarchy of an application using javascript.
+\end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -193,46 +194,33 @@ AS3 \textbullet{} iOS \textbullet{} Android \textbullet{} MySQL
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Research}
-\runsubsection{Cornell Robot Learning Lab}
-\descript{| Head Undergrad Research}
-\location{Jan 2014 – Present | Ithaca, NY}
-Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.  Publication submitted.
+\runsubsection{Real World Artificial Intelligence for Software Engineering}
+\descript{}
+\location{Oct 2014 – Present | Raleigh, NC}
+\begin{tightemize}
+\item Software Effort Estimation using machine learning algorithms on industrial software projects. Statistical analysis on ranking effort estimators using parametric and non parametric statistical tests.
+\item Optimizing requirements engineering models on i* frameworks using multi objective optimization techniques.
+\item Developing an artifacts manager to maintain artifacts from research papers.
+\end{tightemize}
 \sectionsep
 
-\runsubsection{Cornell Phonetics Lab}
-\descript{| Head Undergraduate Researcher}
-\location{Mar 2012 – May 2013 | Ithaca, NY}
-Lead the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research. Publication submitted.
-\sectionsep
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     AWARDS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Awards} 
-\begin{tabular}{rll}
-2014	     & top 52/2500  & KPCB Engineering Fellow\\
-2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
-2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
-2013	     & National  & Jump Trading Challenge Finalist\\
-2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
-2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
-2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
-2010     & National & Comp. Soc. of India's National Programming Contest\\
-\end{tabular}
+\runsubsection{NASA Jet Propulsion Laboratory}
+\descript{}
+\location{Jan 2015 – May 2015}
+\begin{tightemize}
+\item Software Quality Prediction for their space programs.
+\item Published in NASA Cost Symposium 2015.
+\end{tightemize}
 \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%     SOCIETIES
+%     PUBLICATIONS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Societies} 
-
-\begin{tabular}{rll}
-2014 	& top 12\%ile    & Tau Beta Pi Engineering Honor Society\\
-2014   & National   & The Global Leadership and Education Forum (tGELF)\\
-2012   &  National  & Golden Key International Honor Society\\
-2012   &  National   & National Society of Collegiate Scholars\\
+\section{Publications} 
+\begin{tabular}{p{2cm}p{9.2cm}}
+	\href{https://www.nasa.gov/sites/default/files/files/27_NASA_SC_SW_Cost_Model_final.pdf}{June 2015}  & NASA Software Cost Estimation Model: An Analogy Based Estimation Method\\
+	\href{http://georgevmathew.com/other-files/Digital_Sphygmomanometer.pdf}{April 2012} & Digital Spyghmomanometer\\
 \end{tabular}
 \sectionsep
 

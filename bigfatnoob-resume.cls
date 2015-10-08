@@ -17,6 +17,7 @@
 \usepackage[UKenglish]{babel}
 \usepackage[UKenglish]{isodate}
 \usepackage{fontspec,xltxtra,xunicode}
+\usepackage{graphicx}
 
 % Color definitions
 \definecolor{date}{HTML}{666666} 
@@ -53,6 +54,17 @@ Last Updated on
 	\vspace{-15pt}
 }
 \titlespacing{\section}{0pt}{0pt}{0pt}
+
+%Profile Pic Command
+\newcommand{\profilepic}[1]{
+	\begin{textblock}{}(15, 0)
+	\begin{figure}
+	\centering
+	\resizebox{30mm}{!}{
+	\includegraphics{#1}}
+	\end{figure}
+	\end{textblock}
+}
 
 % Headings command
 \titleformat{\section}{\color{headings}
