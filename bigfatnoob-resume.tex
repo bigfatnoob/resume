@@ -135,20 +135,22 @@ Facebook: \href{https://www.facebook.com/george.mathew.1690}{\custombold{george.
 
 \section{Skills}
 \subsection{Programming}
-\location{Experienced:}
+\location{\custombold{Experienced:}}
 Java \textbullet{} JavaScript\textbullet{} HTML \textbullet{} Matlab \\
-MySQL \textbullet{} Python \textbullet{} MongoDB \textbullet{} CSS \\ 
-\location{Semi-Pro:}
+MySQL \textbullet{} Python \textbullet{} TensorFlow \\ 
+\location{\custombold{Semi-Pro:}}
 C++ \textbullet{} R \textbullet{} Redis \textbullet{} Clojure \textbullet{} \LaTeX\ \\ 
-\textbullet{} Shell \textbullet{} Ruby on Rails\\
-\location{Familiar:}
+\textbullet{} Shell \textbullet{} Ruby on Rails \textbullet{} ECL\\
+\location{\custombold{Familiar:}}
 PHP \textbullet{} Android \textbullet{} Perl \textbullet{} Haskell
 \sectionsep
 
 \subsection{Pet Projects}
 \href{http://region.io}{\custombold{Region.io}}: Online bookmark manager.
 \href{https://github.com/NCSU-Advanced-Algos/octorater}{\custombold{Octorater}}: Movie Predictor on Trident
-\href{https://github.com/bigfatnoob/optima}{\custombold{Optima}}: Multi Objective Optimization algorithms framework
+\href{https://github.com/bigfatnoob/optima}{\custombold{Optima}}: Multi Obj Opt framework
+\href{https://github.com/dr-bigfatnoob/collections}{\custombold{Collections}}: Datastructures in Java
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -166,13 +168,23 @@ PHP \textbullet{} Android \textbullet{} Perl \textbullet{} Haskell
 
 \section{Experience}
 
+\runsubsection{LexisNexis}
+\descript{| Software Engineering Intern }
+\location{May 2017 – August 2017 | Raleigh, NC}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	\item Implement Gradient Boosting Trees on Enterprise Computing Language(ECL).
+	\item Develop a common search platform for both legal and academic documents.
+\end{tightemize}
+\sectionsep
+
 \runsubsection{Facebook}
 \descript{| Software Engineering Intern }
 \location{May 2015 – August 2015 | Menlo Park, CA}
 \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Worked on query parsing and big data management across regions for facebook infrastructure data.
-\item Created a thrift based API to help data migrate efficiently across datacenters.
+	\item Worked on query parsing and big data migration across regions.
+	\item Created a thrift based API to help data migrate efficiently across datacenters.
 \end{tightemize}
 \sectionsep
 
@@ -180,8 +192,9 @@ PHP \textbullet{} Android \textbullet{} Perl \textbullet{} Haskell
 \descript{| Software Engineer }
 \location{October 2013 – June 2014 | Hyderabad, India}
 \begin{tightemize}
-\item Developed \textbf{\href{https://www.crowdchat.net/}{crowdchat.net}}, a hash-tag based chat platform. It was built using the NodeJS Redis stack. Bootstrap, jQuery and client jade were used to develop the user interface.
-\item Worked on \textbf{\href{https://platform.crowdchat.net}{platform.crowdchat.net}}, a data analytics platform that helps you connect with people and subscribe to their activities on twitter. The application was built on the Java MySQL stack and successfully scaled to hold more than 250 GB of analyzed data. Full text search was provided using Apache Solr.\end{tightemize}
+	\item Developed \textbf{\href{https://www.crowdchat.net/}{crowdchat.net}}, a hash-tag based chat platform. It was built using the NodeJS Redis stack. Bootstrap, jQuery and client jade were used to develop UI.
+	\item Worked on \textbf{\href{https://platform.crowdchat.net}{platform.crowdchat.net}}, a data analytics platform that helps you connect with people and subscribe to their activities on twitter. Built on the Java MySQL stack and scaled for over 250 GB of analyzed data.
+\end{tightemize}
 \sectionsep
 
 \runsubsection{Payoda Technologies}
@@ -190,7 +203,6 @@ PHP \textbullet{} Android \textbullet{} Perl \textbullet{} Haskell
 \begin{tightemize}
 \item Created a REST based module to register a device into \textbf{\href{http://www.appviewx.com/}{AppViewX}}, which is a software load balancer.
 \item Developed an aggregation module on mongoDB using map-reduce to aggregate statistics periodically.
-\item Designed and developed a topological view to display hierarchy of an application using javascript.
 \end{tightemize}
 \sectionsep
 
@@ -199,13 +211,13 @@ PHP \textbullet{} Android \textbullet{} Perl \textbullet{} Haskell
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Research}
-\runsubsection{Real World Artificial Intelligence for Software Engineering}
+\runsubsection{Real AI in Software Eng. (\href{http://ai4se.net}{RAISE})}
 \descript{guided by \href{http://menzies.us}{Dr. Tim Menzies}}
 \location{Oct 2014 – Present | Raleigh, NC}
 \begin{tightemize}
-\item Studying trends in software engineering conferences using topic modeling.
-\item Software Effort Estimation using machine learning algorithms on industrial software projects. Statistical analysis on ranking effort estimators using parametric and non parametric statistical tests.
-\item Optimizing requirements engineering models on i* frameworks using multi objective optimization techniques.
+\item Studying trends in SE venues using topic modeling.
+\item S/W Effort Estimation using machine learning on industrial S/W projects.
+\item Optimizing requirements engineering models on i* frameworks using multi objective optimization techniques.(Funded By: \href{http://www.sei.cmu.edu/}{SEI-CMU})
 \end{tightemize}
 \sectionsep
 
@@ -224,8 +236,9 @@ PHP \textbullet{} Android \textbullet{} Perl \textbullet{} Haskell
 
 \section{Publications} 
 \begin{tabular}{p{2cm}p{9.2cm}}
-	\href{https://arxiv.org/abs/1608.08100}{IST-Sub} & Trends in Topics at SE Conferences: (1993-2016).\\
-	\href{https://arxiv.org/abs/1608.08100}{ICSE-2017} & Trends in Topics at SE Conferences: Preliminary Version (1993-2013).\\
+	\href{https://arxiv.org/abs/1608.08100}{TSE-Sub} & Trends in Topics at SE Conferences: (1993-2016).\\
+	\href{https://arxiv.org/abs/1702.05568}{RE-2017} & SHORTer Reasoning About Larger Requirements Models.\\ 
+	\href{https://arxiv.org/abs/1608.08100v1}{ICSE-2017} & Trends in Topics at SE Conferences: Preliminary Version\\
 	\href{https://arxiv.org/abs/1609.05563}{IST-2016} & Negative Results for Software Effort Estimation.\\
 	\href{http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7500655&tag=1}{AAAI-2016} & Improving and Expanding NASA Software Cost Estimation Methods \\
 	\href{https://www.nasa.gov/sites/default/files/files/27_NASA_SC_SW_Cost_Model_final.pdf}{NASA-2015}  & NASA Software Cost Estimation Model: An Analogy Based Estimation Method\\
