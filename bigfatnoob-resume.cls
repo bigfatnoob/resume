@@ -20,8 +20,8 @@
 \usepackage{graphicx}
 
 % Color definitions
-\definecolor{date}{HTML}{666666} 
-\definecolor{primary}{HTML}{2b2b2b} 
+\definecolor{date}{HTML}{444444} 
+\definecolor{primary}{HTML}{1b1b1b} 
 \definecolor{headings}{HTML}{6A6A6A}
 \definecolor{subheadings}{HTML}{333333}
 
@@ -29,7 +29,11 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Color=primary, Path = fonts/lato/]{Lato-Lig}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = fonts/raleway/]{Raleway-ExtraLight}
-\newcommand{\custombold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
+\newcommand{\pbold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Bol}\selectfont #1 \normalfont}
+\newcommand{\cbold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\selectfont #1 \normalfont}
+\newcommand{\citalic}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-RegIta}\selectfont #1 \normalfont}
+\newcommand{\bbold}[1]{\color{subheadings}\fontspec[Path = fonts/lato/]{Lato-Reg}\fontsize{12pt}{12pt}\selectfont #1 \normalfont}
+
 
 % Date command
 \setlength{\TPHorizModule}{1mm}
@@ -45,8 +49,8 @@ Last Updated on
 \newcommand{\namesection}[3]{
 	\centering{
 		\sffamily
-		\fontspec[Path = fonts/lato/]{Lato-Hai}\fontsize{40pt}{10cm}\selectfont #1 
-		\fontspec[Path = fonts/lato/]{Lato-Lig}\selectfont #2
+		\fontspec[Path = fonts/raleway/]{Raleway-Light}\fontsize{20pt}{10cm}\selectfont #1 
+		\fontspec[Path = fonts/raleway/]{Raleway-Light}\selectfont #2
 	} \\
 	\vspace{5pt}
 	\centering{ \color{headings}\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{14pt}\selectfont #3}
@@ -81,12 +85,25 @@ Last Updated on
 % Descriptors command
 \newcommand{\descript}[1]{\color{subheadings}\raggedright\scshape\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
+\newcommand{\darker}[1]{\textcolor{subheadings}{#1}}
+
 % Location command
 \newcommand{\location}[1]{\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
+
+\newcommand{\locationa}[1]{\color{headings}\raggedright\fontspec[Path = fonts/raleway/]{Raleway-Medium}\fontsize{9pt}{11pt}\selectfont {#1} \normalfont}
 
 % Section seperators command
 \newcommand{\sectionsep}[0]{\vspace{8pt}}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}{\end{itemize}\vspace{-\topsep}}
+
+% Right Align in Experience
+\newcommand{\rAlign}[1]{
+    \vspace{-5mm}
+    \hspace*{0pt}\hfill \locationa{#1}
+    \vspace{1mm}
+    \location{}    
+}
+
 

@@ -1,0 +1,398 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{bigfatnoob-resume}
+\usepackage{graphics}
+\usepackage[document]{ragged2e}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \profilepic{img/profile.png}
+\namesection{George}{Mathew}{ \urlstyle{same}\url{bigfatnoob.us} | 
+\href{mailto:george.meg91@gmail.com}{george.meg91@gmail.com} | 614.535.8678
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{North Carolina State}
+\descript{PhD in Computer Science}
+\location{Expected Dec 2021| Raleigh, NC 
+\\ Current. GPA: 3.93 / 4.0
+}
+\vspace{1mm}
+\descript{MS in Computer Science}
+\location{Aug 2014 - May 2016 | Raleigh, NC 
+\\ Current. GPA: 4.0 / 4.0
+}
+\sectionsep
+
+\subsection{Amrita University}
+\descript{B.Tech in Electronics Engg}
+\location{Jul 2008 - May 2012 | CBE, India}
+% College of Engineering \\
+\location{ Cum. GPA: 3.92 / 4.0 (\citalic{Gold Medalist})} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{\cbold{Pro:}Java \textbullet{} JavaScript\textbullet{} Haskell \\ \textbullet{} Matlab  \textbullet{} Python \textbullet{} R \textbullet{} Git \textbullet{} \LaTeX}
+\vspace{1mm}
+\location{\cbold{Semi-Pro:}C++  \textbullet{} Shell \textbullet{} Scala \\
+\textbullet{} Clojure \textbullet{} RubyOnRails}
+\vspace{1mm}
+\location{\cbold{Familiar:} PHP \textbullet{} Android \textbullet{} Perl \\ \textbullet{} C \textbullet{} Julia \textbullet{} C\# \textbullet{} Bison}
+\sectionsep
+
+\subsection{Data Processing}
+\location{\cbold{}Hadoop \textbullet{} Spark \textbullet{} Trident \\ \textbullet{} Storm \textbullet{} Hive}
+\sectionsep
+
+\subsection{Machine Learning}
+\location{\cbold{}Scikit-learn \textbullet{} Pandas \textbullet{} Keras \\ \textbullet{} Tensorflow}
+\sectionsep
+
+\subsection{Databases}
+\location{\cbold{}MySQL \textbullet{} MongoDB \textbullet{} Redis \\ \textbullet{} Cassandra \textbullet{}  Neo4j}
+\sectionsep
+
+\subsection{Build}
+\location{\cbold{}Make \textbullet{} Maven \textbullet{} Ant \textbullet{} Gradle }
+\sectionsep
+
+\subsection{DevOps}
+\location{\cbold{}Docker \textbullet{} Vagrant \textbullet{} Google Cloud \\ \textbullet{} Amazon Web Services }
+\sectionsep
+
+\subsection{Software Engineering}
+\location{\cbold{} TDD \textbullet{} Scrum \textbullet{} Extreme Programming \\ \textbullet{} Continuous Integration}
+\sectionsep
+
+% \subsection{OS}
+% \location{\cbold{}Linux \textbullet{} MacOS \textbullet{} Windows}
+% \sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{FootPrints} 
+Google Scholar: \href{https://scholar.google.com/citations?hl=en&user=OplPzcwAAAAJ&view_op=list_works&sortby=pubdate}{\cbold{tiny.cc/dbnvtz}}\\
+Github: \href{https://github.com/bigfatnoob}{\cbold{bigfatnoob}} \\
+LinkedIn: \href{https://www.linkedin.com/in/georgevmathew}{\cbold{georgevmathew}} \\
+Twitter: \href{https://twitter.com/thatbigfatnoob}{\cbold{@ThatBigFatNoob}} \\
+Facebook: \href{https://www.facebook.com/george.mathew.1690}{\cbold{george.mathew.1690}}\\
+\sectionsep
+
+% \item \textbf{OS}: Linux, Windows; %  %  - 7+ years experience of working in Linux environments to conduct scientific research routines, such as setting up experiments of distributed systems, writing scripts and code as needed for program and data analysis.
+%  %   \item \textbf{Data analysis tools}: SciPy, Pandas, Weka;
+%     \item \textbf{Data Processing}: Aapche Hadoop, Apache Spark, GraphQL;
+%     \item \textbf{Cloud Systems}: Docker, Cassandra, MySQL, Apache HTTP server, Squid, Memcached;
+%     \item \textbf{Build \& SCM Tools}: Make, Git, Maven, SVN.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.65\textwidth} 
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Industrial Experience}
+\runsubsection{WhatsApp}
+\descript{| S.E. Intern }
+\rAlign{May'19 - Aug'19 | Menlo Park, CA}
+\begin{tightemize}
+    \vspace{\topsep} % Hacky fix for awkward extra vertical space
+    \item Designed and \cbold{introduced custom signals} to track bad actors. 
+    \item Developed policies using the custom signals to \cbold{automatically identify and ban bad actors}.
+    \item Created a \cbold{signal-based dashboard} to monitor bad actors and their actions.
+    \item \cbold{Deployed and monitored policies} across different data centers.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Microsoft}
+\descript{| S.E. Intern - OFFICE}
+\rAlign{May'18 - Aug'18 | Seattle, WA}
+\begin{tightemize}
+    \item Optimized \cbold{selection of projects for packaging builds} based on usage and history, resulting in faster setup and efficient space utilization.
+    \item Implemented \cbold{logging framework} to profile different modules of the selection and build framework.
+    \item Developed \cbold{telemetry dashboards} of the build process in PowerBI.
+    \item Developed \cbold{prototype for improving build} using shared  resources.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{LexisNexis}
+\descript{| S.E. Intern}
+\rAlign{May'17 – Aug'17 | Raleigh, NC}
+\begin{tightemize}
+	\item Implemented and parallelized \cbold{Gradient Boosting Trees} in Enterprise Computing Language  on LexisNexis' HPCC platform for $\sim$500GB data.
+	\item Developed an \cbold{integrated search platform} for both legal and academic documents using TensorFlow.
+% 	\item Top-3 best poster award for the internship.
+	\item Research article published in Elsevier Connect (\href{https://www.elsevier.com/connect/how-does-your-research-influence-legislation-text-mining-may-reveal-the-answer}{tiny.cc/bfn\_el}) 
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Facebook}
+\descript{| S.E. Intern }
+\rAlign{May'15 – Aug'15 | Menlo Park, CA}
+\begin{tightemize}
+    \item Developed \cbold{Java based parsing module} for Hive and Presto identifying components of Query.
+	\item Optimized \cbold{data migration} between datacenters based on usage statistics.
+	\item Created \cbold{Apache Thrift based API} to expose service across different languages.
+	\item Developed \cbold{React.js and Java based client} for the Thrift API.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{CrowdChat}
+\descript{| S.E. }
+\rAlign{Oct'13 – Jun'14 | Hyderabad, India}
+\begin{tightemize}
+	\item Developed \textbf{\href{https://www.crowdchat.net/}{crowdchat.net}}, a \cbold{hash-tag based chat platform} using NodeJS-Redis stack, Bootstrap, jQuery, and jade.
+	\item Implemented cross platform chat on \textbf{\href{https://platform.crowdchat.net}{platform.crowdchat.net}}, a \cbold{data analytics platform} to connect with people and subscribe to their activities on twitter. 
+	\item Built \cbold{analytics engine} on a Java-MySQL stack and \cbold{scaled for over 250 GB} of unprocessed data.
+	\item Designed \cbold{notification engine} and \cbold{customized ticker linking posts} from different social platforms.
+	\item Developed \cbold{database management} and automation scripts supporting periodic maintenance.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Payoda Technologies}
+\descript{| S.E.}
+\rAlign{Jun'12 – Sep'13 | Coimbatore, India}
+\begin{tightemize}
+\item Created a \cbold{REST based module to register devices} into \href{http://www.appviewx.com/}{AppViewX}, a software load balancer.
+\item Developed an \cbold{aggregation module} on mongoDB using map-reduce to aggregate statistics periodically.
+\item Designed \cbold{Prototype Adaptor for configuring switches} into the AppViewX environment.
+\end{tightemize}
+\sectionsep
+
+\end{minipage} 
+\newpage
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+- Advanced Machine Learning \\
+- Automated Software Engineering \\
+- Automated Program Repair\\
+- Advanced Algorithms;\\
+- Compilers; \ \  DevOps \\
+- Data Guided Business Intelligence\\
+- Advanced Database Management \\
+- Object Oriented Design Paradigm\\
+- Spatial \& Temporal Data Mining\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     CERTIFICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Certifications}
+\cbold{Stanford} \\
+\ \ \ \ - \href{https://github.com/bigfatnoob/bigfatnoob.github.io/blob/master/other-files/certifications/ML.pdf}{Machine Learning} \\
+\cbold{Princeton} \\
+\ \ \ \ - \href{https://github.com/bigfatnoob/bigfatnoob.github.io/blob/master/other-files/certifications/Algorithms1.pdf}{Algorithms}\\
+\cbold{Deeplearning.ai} \\
+\ \ \ \ - \href{https://github.com/bigfatnoob/bigfatnoob.github.io/blob/master/other-files/certifications/DL1.pdf}{Neural Networks \& Deep Learning}\\
+\ \ \ \ - \href{https://github.com/bigfatnoob/bigfatnoob.github.io/blob/master/other-files/certifications/DL2.pdf}{Improving Deep Neural Networks}\\
+\ \ \ \ - \href{https://github.com/bigfatnoob/bigfatnoob.github.io/blob/master/other-files/certifications/DL3.pdf}{Structuring Machine Learning Projects}\\
+\ \ \ \ - \href{https://github.com/bigfatnoob/bigfatnoob.github.io/blob/master/other-files/certifications/DL4.pdf}{Convolutional Neural Networks}\\
+% - Database Management Systems \\
+% - Compilers; \ \  DevOps \\  
+% - Data Guided Business Intelligence\\
+% - Object Oriented Design Paradigm\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PET PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Personal Projects}
+\href{http://Region.io}{\bbold{Region.io}}: A bookmark manager via a \cbold{website} or \cbold{chrome extension}. Pages indexed using \cbold{Elasticsearch}, with a \cbold{Node.js} based server and \cbold{MongoDB} based database. $\rightarrow$ \href{http://region.io}{\cbold{region.io}} \vspace{1mm}
+
+
+\href{https://github.com/NCSU-Advanced-Algos/octorater}{\bbold{Octorater}}: Distributed application for text analysis on movie reviews to predict movie ratings. Powered by \cbold{R} and parallelly deployed via \cbold{Apache Trident}. $\rightarrow$ \href{https://github.com/NCSU-Advanced-Algos/octorater}{\cbold{tiny.cc/bfn\_pp0}} \vspace{1mm}
+
+
+\href{https://github.com/bigfatnoob/optima}{\bbold{Optima}}: Multi-objective optimization framework containing the latest state of the art optimization algorithms. Implemented on \cbold{Python}, front-end using \cbold{Flask} and graphic rendering via \cbold{Seaborn} \& \cbold{MatPlotLib}. Adopted and utilized by two research labs. $\rightarrow$  \href{https://github.com/bigfatnoob/optima}{\cbold{git.io/vFrK1}} \vspace{1mm}
+
+\href{https://github.com/dr-bigfatnoob/collections}{\bbold{Collections}}: Prominent datastructures efficiently implemented in \cbold{Java8} based on \cbold{object oriented paradigms} \& \cbold{test driven development} with threading and parallel processing. $\rightarrow$\href{https://github.com/dr-bigfatnoob/collections}{\cbold{git.io/vFrK7}}\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Awards
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Achievements}
+- \cbold{NCSU Graduate Merit Award} for Cross-Language Source Code Similarity \\
+- \cbold{Top-3 best poster award} in HPCC summit for summer internship at LexisNexis \\
+- \cbold{Best Fresher} at Payoda Technologies \\ 
+- \cbold{University Silver Medallist} in under-graduation at Amrita University \\
+
+% - \cbold{National Gold Medallist} in High School Math Olympiad.
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.65\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Semantic Code Search}
+\descript{guided by \href{http://kstolee.github.io/}{Dr. Katie Stolee}}
+\location{Feb 2018 – Present | Raleigh, NC}
+\begin{tightemize}
+    \vspace{\topsep}
+    \item Designed and maintained \cbold{tools to identify similar code} based on dynamic and static similarity measures.
+    \item Developed the \cbold{first cross-language dynamic code clone detection} (published in ICSE-2020) and \cbold{code-to-code search} (published in FSE-2021) tool on Java, Python and R using multi-objective search of code-similarity measures.
+    \item Explored \cbold{expansions for functional programming languages} like Haskell and \cbold{scalability to large open-source repositories}.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Real AI in Software Eng. (\href{http://ai4se.net}{RAISE})}
+\descript{guided by \href{http://menzies.us}{Dr. Tim Menzies}}
+\location{Oct 2014 – Jan 2018 | Raleigh, NC}
+\begin{tightemize}
+\item Analyzed \cbold{trends in Software Engineering (SE) venues} using topic modeling and identified that SE research can be summarized as 11 topics. 
+\item Published in International Conference on SE 2017, IEEE Transactions on SE 2018 and Automated SE conference 2019.
+\item \cbold{Funded by NASA-JPL, LexisNexis Risk and SEI-CMU}.
+% \item Studying impact of lines of code on Software Development effort. Under review at Journal of Software Sciences.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Software Engineering Institute - CMU (\href{https://www.sei.cmu.edu/}{SEI-CMU})}
+\location{Aug 2015 – Feb 2016}
+\begin{tightemize}
+\item Developed GUI based tool for \cbold{optimizing requirements engineering models} on i* frameworks using multi objective optimization techniques.
+% \item GUI based tool to process RE models and render flowcharts based on decision priority and optimal configurations.
+\item Published in IEEE Requirements Eng. Conference 2017 and IEEE Software Architecture Workshop 2017.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{NASA Jet Propulsion Laboratory}
+\descript{}
+\location{Jan 2015 – May 2015}
+\begin{tightemize}
+\item Estimated \cbold{Software effort} for industrial projects and space programs.
+\item Developed PEEKING2, a \cbold{non-parametric projection based model} for skewed datasets with insufficient observations.
+% \item Software Quality Prediction for their space programs.
+\item Published in NASA Cost Symposium 2015 and EMSE Journal 2016.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Top Publications} 
+\begin{tightemize}
+    \vspace{\topsep}
+    \item \pbold{\href{https://arxiv.org/pdf/2106.09173.pdf}{FSE-2021}}: \cbold{George Mathew}, Katie Stolee. \citalic{Cross-language Code Search Using Static and Dynamic Analyses}
+    \item \pbold{\href{https://arxiv.org/abs/2002.03039}{ICSE-2020}}: \cbold{George Mathew}, Chris Parnin, Katie Stolee. \citalic{SLACC: Simion-based Language Agnostic Code Clones}
+    \item \pbold{\href{https://ieeexplore.ieee.org/abstract/document/8474491}{IEEE Software}}: \cbold{George Mathew}, Tim Menzies. \citalic{Software Engineering's Top Topics, Trends, and Researchers}
+    \item \pbold{\href{https://ieeexplore.ieee.org/abstract/document/8474491}{MSR-2018}}: Vivek Nair, Amritanshu Agrawal, Jianfeng Chen, Wei Fu, \cbold{George Mathew}, Tim Menzies, Leandro Minku, Markus Wagner, Zhe Yu. \citalic{Data-driven Search-based Software Engineering}
+    \item \pbold{\href{https://ieeexplore.ieee.org/abstract/document/8465996/}{TSE-2018}}: \cbold{George Mathew}, Tim Menzies. \citalic{Finding Trends in Software Engineering} \location{(Journal First ASE-2019)}\citalic{}
+    \item \pbold{\href{https://ieeexplore.ieee.org/abstract/document/8048901/}{RE-2017}}: \cbold{George Mathew}, Tim Menzies, Neil A. Ernst, John Klein. \citalic{``SHORTer" Reasoning About Larger Requirements Models}
+    \item \pbold{\href{https://ieeexplore.ieee.org/abstract/document/7965367/}{ICSE-2017}}: \cbold{George Mathew}, Amritanshu Agrawal, Tim Menzies. \citalic{Trends in Topics at SE Conferences: Preliminary Version}
+    \item \pbold{\href{https://resources.sei.cmu.edu/asset_files/ConferencePaper/2017_021_001_505731.pdf}{ISAW-2017}}: Neil A. Ernst, John Klein, \cbold{George Mathew}, Tim Menzies. \citalic{Using Stakeholder Preferences to Make Better Architecture Decisions}
+    \item \pbold{\href{https://link.springer.com/article/10.1007/s10664-016-9472-2}{ESE-2017}}: Tim Menzies, Ye Yang, \cbold{George Mathew}, Barry Boehm, Jairus Hihn. \citalic{Negative Results for Software Effort Estimation}
+    \item \pbold{\href{https://ieeexplore.ieee.org/abstract/document/7500655/}{AAAI-2016}}: Jairus Hihn, Leora Juster, James Johnson, Tim Menzies, \cbold{George Mathew}. \citalic{Improving and Expanding NASA Software Cost Estimation Methods}
+    % \item \pbold{\href{https://ntrs.nasa.gov/search.jsp?R=20170007017}{NASA-2015}}: Jairus Hihn, Tim Menzies, \cbold{George Mathew}, James Johnson \citalic{NASA Software Cost Estimation Model: An Analogy Based Estimation Method} 
+    % \item \pbold{ICCC-2012}: \cbold{George Mathew}, KG Praveen, Pravin P, Sandeep M, Sharanya Ramesh. \citalic{Digital Sphygmomanometer}
+\end{tightemize}
+\sectionsep
+
+% \subsection{In Progress}
+% \begin{tightemize}
+%     \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% 	\item \cbold{George Mathew}, Tim Menzies, Jairus Hihn. \citalic{Impacts of Bad ESP (Early Size Predictions) on Software Effort Estimation} $\rightarrow$
+% 	\location{\href{https://tiny.cc/bfn_p7}{tiny.cc/bfn\_p7}}
+% \end{tightemize}
+% \sectionsep
+
+\end{minipage}
+
+\end{document}  \documentclass[]{article}

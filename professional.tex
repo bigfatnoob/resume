@@ -1,0 +1,272 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Medium Length Professional CV
+% LaTeX Template
+% Version 2.0 (8/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Trey Hunner (http://www.treyhunner.com/)
+%
+% Important note:
+% This template requires the resume.cls file to be in the same directory as the
+% .tex file. The resume.cls file provides the resume style used for structuring the
+% document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 
+%----------------------------------------------------------------------------------------
+ 
+\documentclass{professional} % Use the custom resume.cls style 
+\usepackage[left=0.6in, top=0.65in, right=0.6in, bottom=0.2in]{geometry} % Document margins
+\usepackage{helvet}
+\usepackage{pifont}
+\renewcommand{\familydefault}{\sfdefault}
+\newenvironment{myitemize}
+{ \begin{itemize}[leftmargin=0.2em,label={}]
+    \setlength{\itemsep}{0pt}
+    \setlength{\parskip}{0pt}
+    \setlength{\parsep}{0pt}     }
+{ \end{itemize}                  } 
+
+
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{enumitem,kantlipsum}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Peipei Wang} % Your name 
+% \address{\url{http://jianfeng.us}}
+% \address{3111-A Walnut Creek Parkway, Raleigh, NC, 27606}
+\address{\\ 
+{\em \href{https://www.linkedin.com/in/wangpeipei90}{LinkedIn}}
+\\
+{\em \href{https://wangpeipei90.github.io}{Homepage}}
+\\
+{\em \href{http://tiny.cc/PeipeiWangScholarProfile}{Google Scholar}}
+}
+% \address{\\
+% {\em Homepage:} \url{https://wangpeipei90.github.io}
+% }
+% \address{\\ 
+% {\em Google Scholar:} \url{http://tiny.cc/PeipeiWangScholarProfile}
+% }
+\address{\\
+{\em Phone:} (919) 592-2485
+\\
+{\em E-mail:} \href{mailto:wangpeipei.90@gmail.com}{wangpeipei.90@gmail.com}
+}
+\begin{document}
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+% \begin{rSection}{Objectives}
+% \textit{\textbf{Objective: Seeking SDE or Machine Learning internship in Summer'18 and full-time positions starting May'19.
+% }}
+% \end{rSection}
+
+% 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+%\vspace{0.5em}
+
+\begin{rSection}{Education}
+% highlight education if good school or PhD.
+{\bf North Carolina State University (NC State)} \hfill {Raleigh, NC} \\
+{Ph.D. in Computer Science} \hfill {May, 2021(expected)}\\ 
+{Advisor: Dr. Kathryn T. Stolee} \\ 
+{\bf Xi'an Jiaotong University (XJTU)} \hfill {Xi'an, China}\\ 
+{Master of Science in Computer Science} \hfill {2013}\\ 
+{Bachelor of Engineering in Software Engineering} \hfill {2010}\\ 
+
+%North Carolina State University\\%, GPA: 3.8/4.0  \\
+%Coursework: Advanced Distributed System $|$ Network/OS Security $|$ Cloud Computing $|$ Data Mining $|$ Algorithm Analysis
+
+\end{rSection} 
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+% Professional skills and Qualifications----summary
+\begin{rSection}{Skills and Qualifications} 
+\begin{myitemize}\setlength\itemsep{0.1em}
+    \item \textbf{Language}: proficient in Java, Python, R scripts, familiar with C/C++, SQL, Shell script, JavaScript, and JSP; (See LinkedIn for certified skills.)
+    %Python (4+ years), Java (5+ years), R script (4+ years), C/C\texttt{++} (1 year), JavaScript (3 months)
+    \item \textbf{OS}: Linux, Windows; %  %  - 7+ years experience of working in Linux environments to conduct scientific research routines, such as setting up experiments of distributed systems, writing scripts and code as needed for program and data analysis.
+ %   \item \textbf{Data analysis tools}: SciPy, Pandas, Weka;
+    \item \textbf{Data Processing}: Aapche Hadoop, Apache Spark, GraphQL;
+    \item \textbf{Cloud Systems}: Docker, Cassandra, MySQL, Apache HTTP server, Squid, Memcached;
+    \item \textbf{Build \& SCM Tools}: Make, Git, Maven, SVN.  % : Ant, Gradle (groovy)
+    % \item Interested in machine learning/data related positions as well as backend development and (automated) testing.
+\end{myitemize}
+
+% \begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }  
+% Languages & \textbf{\textit{Proficient:}} Python $|$ Java $|$ \LaTeX; \textbf{\textit{Familiar with:}} JavaScript $|$ MatLab $|$ SQL $|$ C\texttt{++}\\
+% Data Analytics & Scikit-learn, SciPy, Pandas, jMetal, Gephi, MPI\\
+% DevOps Tools & Git, Jenkins, Ansible, Travis-CI, AWS Elasticsearch, S3, Docker, Redis \\
+% \end{tabular}   
+
+\end{rSection}
+
+%-------------------------------------------------------------------------------
+%	WORKING
+%-------------------------------------------------------------------------------
+%\begin{rSection}{Internships}
+% 第一行： 职位 部门 公司 年月日 ---阿拉伯数字，英文写全，时间倒序
+%第二行： 公司介绍---一定要先介绍公司是什么样子的
+%第三行： 个人成就 而不是负责的内容---job description： 动词+key word
+%\begin{rSection}{Work Experience / Internship}
+\begin{rSection}{Internship and Research Experience}
+
+\begin{rSubsection}{NSF founded research project, NC State}{Research Assistant}
+{\it Java Microbenchmark Harness (JMH)}{Jan 2020 - Present}
+\item{\bf Performance Evaluation of Regular Expression Usage.} 
+Measure the performance of different ways of data processing with regular expressions, and also compare them with alternative solutions implemented by string operations.
+\end{rSubsection}
+
+\begin{rSubsection}{NSF founded research project, NC State}{Research Assistant}
+{\it Regular Expression Bugs, Fix Complexity, API, Bad Smells, Pull Requests, GraphQL}{Jan 2019 - Jan 2020}
+\item{\bf An Empirical Study on Regular Expression Bug Characteristics.} 
+Studied GitHub pull requests from Java, JavaScript and Python repositories to understand why changes are made to regular expressions.
+Measured the complexity of regular expression bug fixes. Found that regular expression bugs are caused by not only bad regexes but also bad smells in composing regular expressions and the usage of regex APIs. 
+%2) There are patterns to fix regular expression problems. 3) Regular expressions are an approach to refactor code for code maintenance and flexibility.
+%\item Techniques: GraphQL, code smells, refactoring
+\end{rSubsection}
+
+\begin{rSubsection}{NSF founded research project, NC State}{Research Assistant}
+{\it Regular Expression, Maven, Java Instrumentation, Testing Coverage, DFA, re2}{Jan 2017 - Jan 2018}
+\item{\bf Measuring regular expression testing coverage.} 
+Instrumented GitHub Java maven projects and collected regular expressions and its inputs in test suites which are used to measure regular expression testing coverage via transformed DFA metrics. Found that the testing coverage of regular expression is low and lack of negative inputs.
+%\item Techniques: Java instrumentation, \href{https://github.com/google/re2}{re2}, computation theory
+\end{rSubsection}
+
+\begin{rSubsection}{Performance Regression, Facebook, Inc.}{Software Development Intern}
+{\it Cherry-Pick, Fblearner Workflow, Breakage}{June, 2020 - Aug, 2020}
+\item {\bf Automated cherry-pick manager.} 
+Automated the process of discovering pairs of commits that introduces breakages and fix breakages, in other words, cherry-picks, which will be applied to run experiments. This project enables not only cherry-picks that developers manually put into the performance regression experiment pipelines but also automatically manage them in databases through analyzing the history information of successful and failed experiments in the incident tracker. The automation is extended to handle not just one single breakage, but also consider multiple breakage scenarios. 
+\end{rSubsection} 
+
+
+\begin{rSubsection}{DevOps Insights, IBM Inc.}{Data Scientist Intern}
+{\it GitHub, Mining Software Repositories, Rosie Pattern Language, Spark}{June, 2018 - Aug, 2018}
+\item {\bf The importance of mining domain-specific knowledge.} 
+Identified string literals in thousands of selected GitHub projects by leveraging Rosie pattern language, which is an alternative of regular expression language, and Apache Spark for data processing. The analysis of those string literals demonstrated the difficulty of avoiding hard-coding and the security vulnerabilities brought in by hard-coding string literals. 
+\end{rSubsection} 
+
+% \begin{rSubsection}{China Research Laboratory (CRL, Beijing, China), IBM Inc.}{Research Scientist Intern}
+% {\it Log Mining, Software Dependability Analysis, Change Point Detection}{Jun, 2015 - Aug 2015}
+% \item {\bf Unsupervised system metrics segmentation and log differentiation.}
+% Discovered system actions of significant impacts by combining both change point detection for system metrics and trained log templates logs, and comparing the changes of different templates in each segmentation.
+% \end{rSubsection} 
+
+\begin{rSubsection}{Morgan Stanley Inc. (Shanghai, China) }{Technology Intern}
+{\it Library Dependency, d3.js, Graph Cycle Detection}{Jul, 2012 - Sep, 2012}
+\item {\bf Visualized library dependencies among projects in JavaScript.}
+Developed a Web UI to plot dependency paths/cycles and library conflicts between projects with d3.js, a JavaScript library for producing dynamic, interactive data visualizations in web browsers.
+\end{rSubsection} 
+
+\begin{rSubsection}{National Fundamental Software Project (equivalent to NSF), Xi'an Jiaotong University}{Research Assistant}
+{\it Java EE, EJB, Middleware, AOP, JVM, Remote Method Invocation, Classloader}{Jul, 2010 - May, 2012}
+\item {\bf Java EE5 Application Server Development and Optimization.}
+Developed a JAVA EE Application Server to run EJB3 web applications according to the JAVA EE 5 and EJB 3 specifications. Specifically implemented the AOP(Aspect-oriented programming) feature with Java method reflection and conducted code optimization, code refactoring and software test of this product.
+\end{rSubsection} 
+
+
+% \begin{rSubsection}{Measurements of regular expression testing coverage}{Jan 2017- Jan 2018}
+% {NSA founded research project}{}
+% \item Collected maven projects and instrumented the test suites to intercept the pair of regular expression and its testing inputs.
+% \item Defined the metrics of regular expression coverage through the transformed DFAs.
+% \item Findings: 1) Testing coverage of the regular expression is low. 2) The regular expression test cases are lack of negative inputs. 
+% \item Techniques: Java instrumentation, \href{https://github.com/google/re2}{re2}, computation theory
+% \end{rSubsection}
+
+% \begin{rSubsection}{Regular expression bugs and how they are fixed}{Jan 2019- present}
+% {NSA founded research project}{}
+% \item Studied GitHub pull requests from Java, JavaScript and Python repositories to understand why changes are made to regular expressions.
+% \item Measured the complexity of regular expression bug fixes. 
+% \item Findings: 1) Regular expression bugs are caused by not only bad regexes, but also bad smells in composing regular expressions and the usage of regex APIs. 2) There are patterns to fix regular expression problems. 3) Regular expressions are an approach to refactor code for code maintenance and flexibility. 
+% \item Techniques: GraphQL, code smells, refactoring
+% \end{rSubsection}
+\end{rSection}
+
+%--------------------------------------------------------------------------------------
+%   Research Publications 
+%--------------------------------------------------------------------------------------
+\begin{rSection}{Publications} 
+\setenumerate[1]{label=[\arabic*]}
+\begin{rSubsection}{Regular Expression Analysis in Software Engineering}{Testing, Repair, Comprehension, and Maintenance} \\
+%\setenumerate[1]{label=[\arabic*]}
+
+\item ``Demystifying Regular Expression Bugs: A comprehensive study on regular expression bug causes, fixes, and testing". Peipei Wang, Chris Brown, Jamie Jennings, Kathryn T. Stolee. \textit{Empirical Software Engineering (EMSE), 2020 (under submission)}.
+
+\item ``An Empirical Study on Regular Expression Bugs". Peipei Wang, Chris Brown, Jamie Jennings, Kathryn T. Stolee. \textit{International Conference on Mining Software Repositories (MSR), 2020}. \href{https://dl.acm.org/doi/abs/10.1145/3379597.3387464}{\ding{43}}%(Acceptance rate: 26.3\%). 
+
+\item ``Exploring Regular Expression Evolution". Peipei Wang, Rui Bai, Kathryn T. Stolee. \textit{IEEE International Conference on Software Analysis, Evolution and Reengineering (SANER), 2019}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8667972}{\ding{43}}%(Acceptance rate: 30.4\%). 
+
+\item ``How Well Are Regular Expressions Tested in the Wild?" Peipei Wang, Kathryn T. Stolee. \textit{Symposium on the Foundations of Software Engineering (FSE), 2018}. \href{https://dl.acm.org/doi/pdf/10.1145/3236024.3236072}{\ding{43}}% (Acceptance rate: 15\%).
+
+\item ``Exploring Regular Expression Comprehension". Carl Chapman, Peipei Wang, and Kathryn T. Stolee. \textit{International Conference on Automated Software Engineering (ASE), 2017}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8115653}{\ding{43}}
+\end{rSubsection}
+\begin{rSubsection}{Distributed System Failure Diagnosis and Security}{Isolation, Performance, Bug Reproduction} \\
+%\setenumerate[1]{label=[\arabic*]}
+% \begin{rsubSection}{Software Engineering}
+% \end{rsubSection}
+% \begin{rsubSection}{System and Security} 
+% \end{rsubSection}
+%\begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+
+\item ``DScope: Detecting Real-World Data Corruption Hang Bugs in Cloud Server Systems". Ting Dai, Jingzhu He, Xiaohui Gu, Shan Lu, and Peipei Wang. \textit{ACM Symposium on Cloud Computing (SOCC), 2018}. \href{https://dl.acm.org/doi/pdf/10.1145/3267809.3267844}{\ding{43}}
+
+\item ``Hytrace: A Hybrid Approach to Performance Bug Diagnosis in Production Cloud Infrastructures". Ting Dai, Daniel Dean, Peipei Wang, Xiaohui Gu, Shan Lu. \textit{IEEE Transactions on Parallel and Distributed Systems (TPDS), 2018}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=8417446}{\ding{43}}
+
+%\item Ting Dai, Daniel Dean, \underline{Peipei Wang}, Xiaohui Gu, Shan Lu. ``Hytrace: A Hybrid Approach to Performance Bug Diagnosis in Production Cloud Infrastructures". \textit{Proc. of ACM Symposium on Cloud Computing (SOCC), poster session, Santa Clara, CA, September, 2017}. 
+
+\item ``RDE: Replay DEbuggging for Diagnosing Production Site Failures". Peipei Wang, Hiep Nguyen, Xiaohui Gu, Shan Lu. \textit{IEEE International Symposium on Reliable Distributed Systems (SRDS), 2016}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7794362}{\ding{43}}
+
+\item ``A Study of Security Isolation". \textit{ACM Computing Surveys (CSUR), 2016}. Rui Shu, Peipei Wang, Sigmund A. Gorski III, Benjamin Andow, Adwait Nadkarni, Luke Deshotels, Jason Gionta, William Enck and Xiaohui Gu. \href{https://dl.acm.org/doi/pdf/10.1145/2988545}{\ding{43}}
+
+\item ``PerfCompass: Online Performance Anomaly Fault Localization and Inference in Infrastructure-as-a-Service Clouds". Daniel Dean, Hiep Nguyen, Peipei Wang, Xiaohui Gu, Anca Sailer, Andrzej Kochut. \textit{IEEE Transactions on Parallel and Distributed Systems (TPDS), 2015}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7127024}{\ding{43}}
+
+\item ``Automatic Server Hang Bug Diagnosis: Feasible Reality or Pipe Dream?". Daniel Dean, Peipei Wang, Xiaohui Gu, William Enck, Guoliang Jin. \textit{IEEE International Conference on Autonomic Computing (ICAC), 2015}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7266943}{\ding{43}}
+
+\item ``Understanding Real World Data corruption Bugs in Cloud Systems". Peipei Wang, Daniel Dean, Xiaohui Gu. \textit{IEEE International Conference on Cloud Engineering (IC2E), 2015}. \href{https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=7092909}{\ding{43}}
+
+\item ``PerfCompass: Toward Runtime Performance Anomaly Fault Localization for Infrastructure-as-a-Service Clouds". Daniel Dean, Hiep Nguyen, Peipei Wang, Xiaohui Gu. \textit{USENIX Workshop on Hot Topics in Cloud Computing (HotCloud), 2014}. \href{https://www.usenix.org/system/files/conference/hotcloud14/hotcloud14-dean.pdf}{\ding{43}}
+
+%\end{enumerate}
+\end{rSubsection}
+\end{rSection}
+
+\begin{rSection}{Patent} 
+\setenumerate[1]{label=[\arabic*]}
+% \begin{rsubSection}{Software Engineering}
+% \end{rsubSection}
+% \begin{rsubSection}{System and Security} 
+% \end{rsubSection}
+\begin{enumerate}[wide, labelwidth=!, labelindent=0pt]
+\item ``An implement of EJB Container for AOP Based on dynamic stack". Yong Qi, Peipei Wang, Tao Yang, Yingyao Hao. China Patent, Publication Number: CN102508668 A, Application Number: CN201110357781.6.  \href{https://patents.google.com/patent/CN102508668A/en}{\ding{43}}
+\end{enumerate}
+\end{rSection}
+
+
+
+
+% \begin{rSection}{Honors and Awards} 
+% \end{rSection}
+
+% \begin{rSection}{Campus Activities} 
+% \end{rSection}
+
+% \begin{rSection}{Hobbies} 
+% \end{rSection}
+
+% \begin{flushright}
+% {\scriptsize \textit{Updated: Feb 26, 2020}}
+% \end{flushright}
+
+\end{document}
